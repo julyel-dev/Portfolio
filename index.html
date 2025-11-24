@@ -133,7 +133,7 @@
             box-shadow: 0px 0px 25px rgba(31, 111, 235, 0.3);
         }
 
-        /* CORREÇÃO: GRID DE 3 COLUNAS + IMAGEM COMPLETA */
+        /* GRID DE CERTIFICADOS */
         .lista-certificados {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -168,8 +168,36 @@
             background: #3b82f6;
         }
 
+        /* PROJETOS */
+        .projects {
+            margin-top: 40px;
+        }
+
+        .projects h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .pj-link {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #0f172a;
+            color: #93c5fd;
+            border: 1px solid #1f6feb;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .pj-link:hover {
+            background: #1e293b;
+            transform: translateY(-2px);
+            color: #ffffff;
+        }
+
         footer {
-            margin-top: 60px;
+            margin-top: 40px;
             padding: 20px 0;
             text-align: center;
             border-top: 1px solid #1f6feb;
@@ -214,13 +242,25 @@
                 <h2>Meus Certificados</h2>
 
                 <ul class="lista-certificados">
-                <img src="https://i.im.ge/2025/11/24/4IMdra.Captura-de-Tela-2.png" alt="Captura de Tela 2" border="0"></a>
-                <img src="https://i.im.ge/2025/11/24/4IMdra.Captura-de-Tela-2.png" alt="Captura de Tela 2" border="0"></a>
+                    <li><img src="https://i.im.ge/2025/11/24/4IMdra.Captura-de-Tela-2.th.png"></li>
+                    <li><img src="https://i.im.ge/2025/11/24/4IMdra.Captura-de-Tela-2.th.png"></li>
+                    <li><img src="https://i.im.ge/2025/11/24/4IMdra.Captura-de-Tela-2.th.png"></li>
                 </ul>
 
                 <button class="btn-close" onclick="closePopup()">Fechar</button>
             </div>
         </div>
+
+        <!-- PROJETOS -->
+        <section class="projects">
+            <h1>Meus projetos</h1>
+
+            <a class="pj-link" 
+               href="https://julyel-dev.github.io/ej-mill-grauu/"
+               target="_blank">
+                EJ Miil Grauu
+            </a>
+        </section>
 
     </main>
 
